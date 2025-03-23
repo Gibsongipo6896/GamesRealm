@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamesRealm</title>
+    <link rel="shortcut icon" href="gr_images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="gr_styles/navbar.css"> <!-- style ya nav bar-->
+    <link rel="stylesheet" href="gr_styles/body.css"> <!-- style ya nav body -->
+    <link rel="stylesheet" href="gr_styles/about.css"> <!-- style ya about page pekee -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- MASTER CONATINER -->
+<div class="ghost">
+     <!-- NAV START -->
+
+     <nav>
+        <ul class="side-nav">
+            <li onclick=hideBar()><a href="#"><img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" width="40" height="40"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="videos.html">Sample</a></li>
+            <li><a href="support.html">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    
+        <ul>
+            <li><a href="#">GamesRealm</a></li>
+            <li><a href="index.html" class="page">Home</a></li>
+            <li><a href="videos.html" class="page">Sample</a></li>
+            <li><a href="support.html" class="page">Contact</a></li>
+            <li><a href="about.html" class="page">About</a></li>
+            <li onclick=showBar() class="menu-button"><a href="#"><img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" width="40" height="40"></a></li>
+        </ul>
+
+    </nav>
+
+    <!-- NAV END -->
+
+    <div id="heading">
+        <h1>About <span>Games Realm</span></h1>
+ 
+    </div>
+
+    <!-- start for info container -->
+    <div id="info-container">
+        <div class="info">
+            <div class="bullet"></div>
+            <h2>About Games Realm</h2>
+            <p>
+                Thanks for stopping by! I’m Gibson O.W., the creator behind Games Realm. If you love epic gameplay, thrilling challenges, and non-stop fun, you’ve found the right place. I mix action-packed adventures with memorable moments to keep you entertained!
+            </p>
+        </div>
+
+        <div class="info">
+            <div class="bullet"></div>
+            <h2>About Me</h2>
+            <p>
+                I’m also a gamer, programmer, web designer, graphic designer, and app developer. With every project, I aim to blend my skills and passion for gaming to deliver exciting content. Subscribe, like, and turn on notifications so you don’t miss out on any of the action. Let’s level up together!
+            </p>
+        </div>
+
+    </div>
+    <!-- end of info container -->
+
+    <div class="auto-mesej">
+        <h4>My Skills <span class="mesej"></span></h4>
+    </div>
+
+    <!-- footer starts -->
+    <div class="futa">
+        <div class="f-logo">
+            <h5>Games Realm</h5>
+            <p>Copyright@2025</p>
+
+        </div>
+
+        <div class="f-nav">
+            <h5>Navigation</h5>
+            <a href="index.html">Home</a><br>
+            <a href="videos.html">Sample</a><br>
+            <a href="support.html">Contact</a><br>
+            <a href="#">About</a>
+        </div>
+
+        <div class="f-links">
+            <h5>Social Media</h5>
+            <a href="https://github.com/Gibsongipo6896"><img src="gr_images/github(1).png" alt="github" width="50px" height="50px"></a>
+            <a href="https://www.linkedin.com/in/gibson-omieno-6bb851304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="gr_images/linkedin(1).png" alt="linkedin" width="50px" height="50px"></a>
+            <a href="https://www.youtube.com/@gibsongamesrealm?sub_confirmation=1"><img src="gr_images/youtube(1).png" alt="youtube" width="50px" height="50px"></a>
+            <a href="https://www.facebook.com/profile.php?id=61568144085938"><img src="gr_images/facebook(1).png" alt="facebook" width="50px" height="50px"></a>
+
+        </div>
+        <!-- footer ends -->
+
+
+    </div>
+
+</div>
+   
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        const sideNav = document.querySelector(".side-nav");
+        const showBar = () => {
+            sideNav.style.display = "flex";
+            // sidai ii scroll
+            document.body.style.overflow = 'hidden';
+            document.documentElement.style.overflow = 'hidden';
+        }
+        const hideBar = () =>{
+            sideNav.style.display = "none";
+            // inaeza scroll sasa
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
+        }
+
+        var typed = new Typed(".mesej",{
+            strings : [
+  "Deep understanding of Python-driven logic.",
+  "Proficient in HTML, CSS, and JavaScript.",
+  "Experienced in designing Flask-based solutions.",
+  "Skilled in developing custom game modes.",
+  "Fluent in video editing for gaming content.",
+  "Proficient in Java for structured projects.",
+  "Expert in designing scalable architectures.",
+  "Knowledgeable in API design and integration.",
+  "Skilled in microservices and distributed systems.",
+  "Experienced in system performance optimization."
+],
+            typeSpeed:60,
+            backSpeed:30,
+            loop:true
+        })
+    </script>
+</body>
+</html>

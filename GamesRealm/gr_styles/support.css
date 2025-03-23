@@ -1,0 +1,30 @@
+#Contact-container{
+    /* background-color: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact-container div{
+    /* background-color: aqua; */
+    margin: 20px;
+    padding: 20px;
+}
+
+#Contact-container div img{
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+#Contact-container div h5{
+    font-size: 30px;
+    color: white;
+}
+#Contact-container div{
+    font-size: 25px;
+    color: whitesmoke;
+
+}
